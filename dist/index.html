@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tonaton</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <div class="bg-blue-700 h-1/2 w-screen relative pb-1">
+        <div class="flex flex-rol justify-between items-center p-2 text-white">
+            <span class="font-bold text-4xl font-serif">tonaton</span>
+            <button class="bg-blue-400 text-lg text-white rounded-full px-5 py-1">+ Sell</button>
+        </div>
+        <div class="flex flex-col justify-center items-center my-10">
+            <button class="rounded-full w-9/12 h-12 placeholder:py-4 px-10 my-2 bg-gray-50 text-gray-600 flex justify-between items-center"><span>All Ghana</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAY0lEQVR4nO2QMQqAMAxFe04RRS/h2JP912t1qzjoJqa1IEgeZMnwHkkIjuN8Q0ppBDJQjJMlDeYAMFfIyzGSpqorgK0iEBseZY7EJrkxEl/JHyJ95DeRvvITSauk5Vo4zj/YAZNO2JSJscKSAAAAAElFTkSuQmCC"></button>
+            <input type="search" name="search" id="search" placeholder="What are you looking for?" class="rounded-full w-9/12 h-12 placeholder:py-4 placeholder:text-gray-600 px-10 mt-2 bg-gray-50 focus:outline-none">
+        </div>
+    </div>
+
+
+    <section class="flex flex-row flex-wrap justify-center items-center my-10 px-2">
+        <div class="w-1/4 flex flex-col justify-center items-center mb-3">
+            <div class="bg-blue-300 relative rounded-full flex flex-col justify-center items-center py-1 w-16 h-16 overflow-hidden">
+                <img src="/img/car.png" alt="" class="h-full w-full" >
+            </div>
+            <p id="nameOfItem" class="font-bold text-sm text-center">Vehicles</p>
+            <p id="numberOfAds" class="text-gray-600 text-center">4465 ads</p>
+        </div>
+        <div class="w-1/4 flex flex-col justify-center items-center mb-3">
+            <div class="bg-blue-300 relative rounded-full flex flex-col justify-center items-center py-1 w-16 h-16 overflow-hidden">
+                <img src="/img/property.png" alt="" class="h-full w-full" >
+            </div>
+            <p id="nameOfItem" class="font-bold text-sm text-center">Property</p>
+            <p id="numberOfAds" class="text-gray-600 text-center">48675 adds</p>
+        </div>
+        <div class="w-1/4 flex flex-col justify-center items-center mb-3">
+            <div class="bg-blue-300 relative rounded-full flex flex-col justify-center items-center py-1 w-16 h-16 overflow-hidden">
+                <img src="/img/phone.png" alt="" class="h-full w-full" >
+            </div>
+            <p id="nameOfItem" class="font-bold text-sm text-center">Mobile Phones</p>
+            <p id="numberOfAds" class="text-gray-600 text-center">19977 ads</p>
+        </div>
+        <div class="w-1/4 flex flex-col justify-center items-center mb-3">
+            <div class="bg-blue-300 relative rounded-full flex flex-col justify-center items-center py-1 w-16 h-16 overflow-hidden">
+                <img src="/img/electronics.png" alt="" class="h-full w-full" >
+            </div>
+            <p id="nameOfItem" class="font-bold text-sm  text-center">Electronics</p>
+            <p id="numberOfAds" class="text-gray-600  text-center">121301 ads</p>
+        </div>
+        <div class="w-1/4 flex flex-col justify-center items-center">
+            <div class="bg-blue-300 relative rounded-full flex flex-col justify-center items-center py-1 w-16 h-16 overflow-hidden">
+                <img src="/img/furniture.png" alt="" class="h-full w-full" >
+            </div>
+            <p id="nameOfItem" class="font-bold text-sm text-center">Home & Furniture</p>
+            <p id="numberOfAds" class="text-gray-600 text-center">162431 ads</p>
+        </div>
+        <div class="w-1/4 flex flex-col justify-center items-center">
+            <div class="bg-blue-300 relative rounded-full flex flex-col justify-center items-center py-1 w-16 h-16 overflow-hidden">
+                <img src="/img/health.png" alt="" class="h-full w-full" >
+            </div>
+            <p id="nameOfItem" class="font-bold text-sm text-center">Health and Beauty</p>
+            <p id="numberOfAds" class="text-gray-600 text-center">123532 ads</p>
+        </div>
+        <div class="w-1/4 flex flex-col justify-center items-center">
+            <div class="bg-blue-300 relative rounded-full flex flex-col justify-center items-center py-1 w-16 h-16 overflow-hidden">
+                <img src="/img/fashion.png" alt="" class="h-full w-full" >
+            </div>
+            <p id="nameOfItem" class="font-bold text-sm text-center">Fashion</p>
+            <p id="numberOfAds" class="text-gray-600 text-center">33004 ads</p>
+        </div>
+        <div class="w-1/4 flex flex-col justify-center items-center">
+            <div class="bg-blue-300 relative rounded-full flex flex-col justify-center items-center py-1 w-16 h-16 overflow-hidden">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAdElEQVR4nO3YUQqFMBBDUZdn3cgkXbRCcR8VF/AegqKD3gP5n3wUQocBAICLRMRke7Hdk2eRVH4WkdQSHNkPZv1EkSJpTnBk/5f9xlrrePotAQAA3CiY8U63ftvTy9bMeAAAgNyCGe9067e9pUjhNx4A8EUb3FaMQHbhjy4AAAAASUVORK5CYII=" class="h-9/12 w-9/12">
+            </div>
+            <p id="nameOfItem" class="font-bold text-sm text-center">All Categories</p>
+            <p id="numberOfAllCat" class="text-gray-600 text-center">></p>
+        </div>
+    </section>
+
+</body>
+<script src="index.js"></script>
+</html>
