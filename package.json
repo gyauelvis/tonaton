@@ -10,5 +10,13 @@
   "dependencies": {
     "tailwindcss": "^3.2.4"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gyauelvis/tonaton.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gyauelvis/tonaton/issues"
+  },
+  "homepage": "https://github.com/gyauelvis/tonaton#readme",
   "description": ""
 }
