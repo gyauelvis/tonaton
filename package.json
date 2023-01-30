@@ -7,9 +7,6 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "tailwindcss": "^3.2.4"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gyauelvis/tonaton.git"
@@ -18,5 +15,8 @@
     "url": "https://github.com/gyauelvis/tonaton/issues"
   },
   "homepage": "https://github.com/gyauelvis/tonaton#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  },
   "description": ""
 }

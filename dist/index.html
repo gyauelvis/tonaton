@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tonaton</title>
     <link rel="stylesheet" href="output.css">
-    <link rel="stylesheet" href="./distoutput.css">
 </head>
 <body>
     <div class="bg-blue-700 h-1/2 w-screen relative pb-1">
-        <div class="flex sticky top-0 left-0
+        <div class="flex sticky bg-blue-700 top-0 left-0
         right-0 flex-rol justify-between items-center p-2 text-white">
             <span class="font-bold text-4xl font-serif">tonaton</span>
             <button class="bg-blue-400 text-lg text-white rounded-full px-5 py-1">+ Sell</button>
@@ -21,60 +20,63 @@
         </div>
     </div>
 
-    <section class="my-10">
-        <div class="flex flex-row justify-evenly items-center">
-            <span class="text-base font-bold">All Ghana</span>
-            <span class="numberOfAllCat text-gray-500"></span>
-            <input type="text" class="rounded-full border w-1/2" placeholder="Find country,region,state,city">
+    <section class="s my-10 py-6 bg-gray-100 rounded-t-3xl">
+        <div class="flex flex-row justify-evenly items-center ">
+            <span class="text-base font-bold w-1/6 text-center">All Ghana</span>
+            <span class="numberOfAllCat text-gray-500 w-1/6 text-center"></span>
+            <input type="text" class="rounded-full border border-blue-500 placeholder:text-sm w-1/2 px-4 py-3 focus:border-2 focus:outline-none focus:border-blue-700" placeholder="Find country,region,state,city">
+        </div>
+        <div id="regions" class="flex flex-col justify-center items-center py-4">
+          
         </div>
     </section>
 
     <section class="flex flex-row flex-wrap justify-center items-center my-10 px-2">
         <button type="button" class="w-1/4 flex flex-col justify-center items-center mb-3">
             <div class="bg-blue-300 relative rounded-full flex flex-col justify-center items-center py-1 w-16 h-16 overflow-hidden">
-                <img src="/img/car.png" alt="" class="h-full w-full" >
+                <img src="/img/car.png" alt=" " class="h-full w-full" >
             </div>
             <p id="nameOfItem" class="font-bold text-sm text-center">Vehicles</p>
             <p id="numberOfAds" class="text-gray-600 text-center">4465 ads</p>
         </div>
         <button type="button" class="w-1/4 flex flex-col justify-center items-center mb-3">
             <div class="bg-blue-300 relative rounded-full flex flex-col justify-center items-center py-1 w-16 h-16 overflow-hidden">
-                <img src="/img/property.png" alt="" class="h-full w-full" >
+                <img src="/img/property.png" alt=" " class="h-full w-full" >
             </div>
             <p id="nameOfItem" class="font-bold text-sm text-center">Property</p>
             <p id="numberOfAds" class="text-gray-600 text-center">48675 adds</p>
         </button>
         <button type="button" class="w-1/4 flex flex-col justify-center items-center mb-3">
             <div class="bg-blue-300 relative rounded-full flex flex-col justify-center items-center py-1 w-16 h-16 overflow-hidden">
-                <img src="/img/phone.png" alt="" class="h-full w-full" >
+                <img src="/img/phone.png" alt=" " class="h-full w-full" >
             </div>
             <p id="nameOfItem" class="font-bold text-sm text-center">Mobile Phones</p>
             <p id="numberOfAds" class="text-gray-600 text-center">19977 ads</p>
         </button>
         <button type="button" class="w-1/4 flex flex-col justify-center items-center mb-3">
             <div class="bg-blue-300 relative rounded-full flex flex-col justify-center items-center py-1 w-16 h-16 overflow-hidden">
-                <img src="/img/electronics.png" alt="" class="h-full w-full" >
+                <img src="/img/electronics.png" alt=" " class="h-full w-full" >
             </div>
             <p id="nameOfItem" class="font-bold text-sm  text-center">Electronics</p>
             <p id="numberOfAds" class="text-gray-600  text-center">121301 ads</p>
         </button>
         <button type="button" class="w-1/4 flex flex-col justify-center items-center">
             <div class="bg-blue-300 relative rounded-full flex flex-col justify-center items-center py-1 w-16 h-16 overflow-hidden">
-                <img src="/img/furniture.png" alt="" class="h-full w-full" >
+                <img src="/img/furniture.png" alt=" " class="h-full w-full" >
             </div>
             <p id="nameOfItem" class="font-bold text-sm text-center">Home & Furniture</p>
             <p id="numberOfAds" class="text-gray-600 text-center">162431 ads</p>
         </button>
         <button type="button" class="w-1/4 flex flex-col justify-center items-center">
             <div class="bg-blue-300 relative rounded-full flex flex-col justify-center items-center py-1 w-16 h-16 overflow-hidden">
-                <img src="/img/health.png" alt="" class="h-full w-full" >
+                <img src="/img/health.png" alt=" " class="h-full w-full" >
             </div>
             <p id="nameOfItem" class="font-bold text-sm text-center">Health and Beauty</p>
             <p id="numberOfAds" class="text-gray-600 text-center">123532 ads</p>
         </button>
         <button type="button" class="w-1/4 flex flex-col justify-center items-center">
             <div class="bg-blue-300 relative rounded-full flex flex-col justify-center items-center py-1 w-16 h-16 overflow-hidden">
-                <img src="/img/fashion.png" alt="" class="h-full w-full" >
+                <img src="/img/fashion.png" alt=" " class="h-full w-full" >
             </div>
             <p id="nameOfItem" class="font-bold text-sm text-center">Fashion</p>
             <p id="numberOfAds" class="text-gray-600 text-center">33004 ads</p>
