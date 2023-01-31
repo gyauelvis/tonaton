@@ -53,6 +53,8 @@ const regionsInGhana = [
   // },
 ];
 
+let getLocation = document.querySelector("#location");
+
 const getRegions = (regionsInGhana) => {
   let regionSec = document.getElementById("regions");
   regionsInGhana.forEach((region) => {
@@ -74,3 +76,7 @@ const getRegions = (regionsInGhana) => {
   });
 };
 getRegions(regionsInGhana);
+
+getLocation.addEventListener("click", (e) => {
+  console.log(getLocation.style.display);
+});
