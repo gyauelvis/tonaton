@@ -45,25 +45,47 @@ const regionsInGhana = [
     town1: "Aburi",
     town2: "Kwau",
   },
-  // {
-  //   regionName: "Eastern Region",
-  //   capital: "Koforidua",
-  //   town1: "Aburi",
-  //   town2: "Kwau",
-  // },
+  {
+    regionName: "Volta Region",
+    capital: "Ho",
+    town1: "Keta",
+    town2: "Hohoe",
+  },
+  {
+    regionName: "Northern Region",
+    capital: "Tamale",
+    town1: "Savelugu",
+    town2: "Bimbila",
+  },
+  {
+    regionName: "Eastern Region",
+    capital: "Koforidua",
+    town1: "Kade",
+    town2: "Aburi",
+  },
+  {
+    regionName: "Upper West Region",
+    capital: "Wa",
+    town1: "Nandom",
+    town2: "Jirapa",
+  },
+  {
+    regionName: "Upper East Region",
+    capital: "Bolgatanga",
+    town1: "Navrongo",
+    town2: "Bawku",
+  },
 ];
 
-let getLocation = document.querySelector("#location");
-
+let regionSec = document.getElementById("regions");
 const getRegions = (regionsInGhana) => {
-  let regionSec = document.getElementById("regions");
   regionsInGhana.forEach((region) => {
     let buttonElement = document.createElement("button");
     buttonElement.setAttribute("type", "button");
     buttonElement.classList.add(
       "flex",
       "flex-col",
-      "bg-white",
+      "bg-blue-50",
       "my-2",
       "py-3",
       "w-11/12",
@@ -77,6 +99,16 @@ const getRegions = (regionsInGhana) => {
 };
 getRegions(regionsInGhana);
 
-getLocation.addEventListener("click", (e) => {
-  console.log(getLocation.style.display);
+let getLocBtn = document.querySelector("#locBtn");
+let regStatus;
+let getOverlay = document.querySelector("#overlay");
+getLocBtn.addEventListener("click", (e) => {
+  regionSec.style.display = "flex";
+  getOverlay.style.display = "block";
+});
+
+getOverlay.addEventListener("click", (e) => {
+  e.preventDefault;
+  getOverlay.style.display = "none";
+  regionSec.style.display = "none";
 });
