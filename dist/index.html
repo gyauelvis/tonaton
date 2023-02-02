@@ -21,13 +21,13 @@
     </div>
    <a href="#" id="overlay" style="z-index:9;opacity:0.85;display:none" class="absolute bg-gray-900 top-0 w-screen h-screen"></a>
 
-    <section id="regions" style="display:none; flex-direction:column; justify-content:center;align-items:center;position:absolute;top:7%;width: 100%;z-index:10" class="my-10 py-6 bg-gray-100 rounded-t-3xl">
+    <section id="regions" style="display:none;flex-direction:column; align-items:center;position:absolute;top:7%;width: 100%;z-index:10;height:auto; min-height: 90vh;" class="my-10 py-6 rounded-t-3xl bg-white">
         <div class="flex flex-row justify-evenly items-center">
             <span class="text-base font-bold w-1/6 text-center">All Ghana</span>
             <span class="numberOfAllCat text-gray-500 w-1/6 text-center"></span>
-            <input type="text" class="rounded-full border border-blue-500 placeholder:text-sm w-1/2 px-4 py-3 focus:border-2 focus:outline-none focus:border-blue-700" placeholder="Find country,region,state,city">
+            <input type="text" id="locationSearch" class="rounded-full border border-blue-500 placeholder:text-sm w-1/2 px-4 py-3 focus:border-2 focus:outline-none focus:border-blue-700" placeholder="Find country,region,state,city">
         </div>
-        <div class="flex flex-col justify-center items-center py-4">
+        <div id="searchValues" class="flex flex-col justify-center items-center py-4">
           
         </div>
         
@@ -100,29 +100,16 @@
         </button>
     </section>
 
-    <!-- <section>
-        <div>
-            
-        </div>
-        <div>
+   <!-- <section class="flex flex-wrap flex-rol justify-center items-center">
+    <button style="background-image: url('/img/electronics.png'); height:25vh; width:45vw;background-position: center;background-size: contain; background-repeat: no-repeat;" class="rounded" type="button"></button>
+    <button style="background-image: url('/img/car.png'); height:25vh; width:45vw;background-position: center;background-size: contain; background-repeat: no-repeat;" class="rounded" type="button"></button>
+    <button style="background-image: url('/img/furniture.png'); height:25vh; width:45vw;background-position: center;background-size: contain; background-repeat: no-repeat;" class="rounded m-0 p-0" type="button"></button>
+    <button style="background-image: url('/img/health.png'); height:25vh; width:45vw;background-position: center;background-size: contain; background-repeat: no-repeat;" class="rounded" type="button"></button>
+    <button style="background-image: url('/img/fashion.png'); height:25vh; width:45vw;background-position: center;background-size: contain; background-repeat: no-repeat;" class="rounded m-0 p-0" type="button"></button>
+    <button style="background-image: url('/img/phone.png'); height:25vh; width:45vw;background-position: center;background-size: contain; background-repeat: no-repeat;" class="rounded" type="button"></button>
+    <button style="background-image: url('/img/property.png m-0 p-0'); height:25vh; width:45vw;background-position: center;background-size: contain; background-repeat: no-repeat;" class="rounded m-0 p-0" type="button"></button>
 
-        </div>
-        <div>
-
-        </div>
-        <div>
-
-        </div>
-        <div>
-
-        </div>
-        <div>
-
-        </div>
-        <div>
-
-        </div>
-    </section> -->
+   </section> -->
 </body>
 <script style="position:relative; z-index:1" src="index.js"></script>
 </html>

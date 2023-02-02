@@ -83,6 +83,7 @@ const getRegions = (regionsInGhana) => {
     let buttonElement = document.createElement("button");
     buttonElement.setAttribute("type", "button");
     buttonElement.classList.add(
+      "regionElements",
       "flex",
       "flex-col",
       "bg-blue-50",
@@ -111,4 +112,57 @@ getOverlay.addEventListener("click", (e) => {
   e.preventDefault;
   getOverlay.style.display = "none";
   regionSec.style.display = "none";
+});
+
+let getLocSearch = document.querySelector("#locationSearch");
+getLocSearch.addEventListener("input", (e) => {
+  regionsInGhana.forEach((region) => {
+    if (e.target.value != "" && e.target.value != " ") {
+      // Get the regions that come up with the popUp when All Ghana is pressed
+      let getRegionElements = document.querySelectorAll(".regionElements");
+      getRegionElements.forEach((element) => {
+        if (
+          element.textContent.toLowerCase().includes(e.target.value) ===
+            false ||
+          element.textContent.toUpperCase().includes(e.target.value) === false
+        ) {
+          element.remove();
+        }
+      });
+
+      if (
+        region.regionName.toLowerCase().includes(e.target.value) ||
+        region.regionName.toUpperCase().includes(e.target.value)
+      ) {
+        //Creating a button based on the search of the user
+        let btnElement = document.createElement("button");
+        btnElement.textContent = region.regionName;
+        document.querySelector("#searchValues").appendChild(btnElement);
+      } else if (
+        region.capital.toLowerCase().includes(e.target.value) ||
+        region.capital.toUpperCase().includes(e.target.value)
+      ) {
+        //Creating a button based on the search of the user
+        let btnElement = document.createElement("button");
+        btnElement.textContent = region.capital;
+        document.querySelector("#searchValues").appendChild(btnElement);
+      } else if (
+        region.town1.toLowerCase().includes(e.target.value) ||
+        region.town1.toUpperCase().includes(e.target.value)
+      ) {
+        //Creating a button based on the search of the user
+        let btnElement = document.createElement("button");
+        btnElement.textContent = region.town1;
+        document.querySelector("#searchValues").appendChild(btnElement);
+      } else if (
+        region.town2.toLowerCase().includes(e.target.value) ||
+        region.town2.toUpperCase().includes(e.target.value)
+      ) {
+        //Creating a button based on the search of the user
+        let btnElement = document.createElement("button");
+        btnElement.textContent = region.town2;
+        document.querySelector("#searchValues").appendChild(btnElement);
+      }
+    }
+  });
 });
