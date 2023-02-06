@@ -115,53 +115,77 @@ getOverlay.addEventListener("click", (e) => {
 });
 
 let getLocSearch = document.querySelector("#locationSearch");
+//What happens where the user begins to search for a particular location?
 getLocSearch.addEventListener("input", (e) => {
+  //classes to be added to the searches that appear
+  let popUpClasses = [
+    "regionElements",
+    "flex",
+    "flex-col",
+    "bg-blue-50",
+    "my-2",
+    "py-3",
+    "w-11/12",
+    "text-lg",
+    "text-gray-700",
+    "px-4",
+  ];
   regionsInGhana.forEach((region) => {
     if (e.target.value != "" && e.target.value != " ") {
       // Get the regions that come up with the popUp when All Ghana is pressed
       let getRegionElements = document.querySelectorAll(".regionElements");
+      //Check if any of the given values that is already on the screen do include the value the user has entered
+
       getRegionElements.forEach((element) => {
         if (
-          element.textContent.toLowerCase().includes(e.target.value) ===
-            false ||
-          element.textContent.toUpperCase().includes(e.target.value) === false
+          element.textContent.toLowerCase().includes(e.target.value) ||
+          element.textContent.toUpperCase().includes(e.target.value)
         ) {
+        } else {
           element.remove();
         }
       });
 
+      let town1AppendStat = false;
+      let town2AppendStat = false;
       if (
-        region.regionName.toLowerCase().includes(e.target.value) ||
-        region.regionName.toUpperCase().includes(e.target.value)
-      ) {
-        //Creating a button based on the search of the user
-        let btnElement = document.createElement("button");
-        btnElement.textContent = region.regionName;
-        document.querySelector("#searchValues").appendChild(btnElement);
-      } else if (
-        region.capital.toLowerCase().includes(e.target.value) ||
-        region.capital.toUpperCase().includes(e.target.value)
-      ) {
-        //Creating a button based on the search of the user
-        let btnElement = document.createElement("button");
-        btnElement.textContent = region.capital;
-        document.querySelector("#searchValues").appendChild(btnElement);
-      } else if (
         region.town1.toLowerCase().includes(e.target.value) ||
         region.town1.toUpperCase().includes(e.target.value)
       ) {
+        document.querySelectorAll("button").forEach((btn) => {
+          if (btn.textContent === region.town1) {
+            town1AppendStat = true;
+          }
+        });
         //Creating a button based on the search of the user
-        let btnElement = document.createElement("button");
-        btnElement.textContent = region.town1;
-        document.querySelector("#searchValues").appendChild(btnElement);
+        let town1sec = document.createElement("div");
+        town1sec.id = "town1";
+        regionSec.appendChild(town1sec);
+        let btnElement;
+        if (town1AppendStat === false) {
+          btnElement = document.createElement("button");
+          btnElement.textContent = region.town1;
+          regionSec.appendChild(btnElement);
+        }
       } else if (
         region.town2.toLowerCase().includes(e.target.value) ||
         region.town2.toUpperCase().includes(e.target.value)
       ) {
+        document.querySelectorAll("button").forEach((btn) => {
+          if (btn.textContent === region.town2) {
+            town2AppendStat = true;
+          }
+        });
         //Creating a button based on the search of the user
-        let btnElement = document.createElement("button");
-        btnElement.textContent = region.town2;
-        document.querySelector("#searchValues").appendChild(btnElement);
+        let town2sec = document.createElement("div");
+        town2sec.id = "town1";
+        regionSec.appendChild(town2sec);
+        let btnElement;
+        if (town2AppendStat === false) {
+          btnElement = document.createElement("button");
+          btnElement.textContent = region.town2;
+          regionSec.appendChild(btnElement);
+        }
       }
     }
   });
